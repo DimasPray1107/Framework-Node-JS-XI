@@ -1,0 +1,23 @@
+{
+  "name": "telur",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypt-js": "^1.0.4",
+    "crypto-js": "^4.1.1",
+    "crypto.js": "^3.0.0",
+    "ejs": "^3k6.1.8",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express.js": "^1.0.0",
+    "mysql2": "^2.3.3",
+    "sha1": "^1.1.1"
+  }
+}

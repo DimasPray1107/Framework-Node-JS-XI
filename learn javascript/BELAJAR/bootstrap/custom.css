@@ -1,0 +1,23 @@
+#header{
+    background:url(assets-mental-health/header.jpg);
+    height: 75vh;
+    background-size: cover;
+}
+#news-header{
+    background:url(assets-mental-health/);
+    height: 75vh;
+    background-size: cover;
+}
+.box-matter1{
+    background: url(assets-mental-health/blue1.jpg);
+    min-height: 400px;
+    background-size: cover;
+}
+.box-matter2{
+    background: url(assets-mental-health/blue2.jpg);
+    min-height: 400px;
+    background-size: cover;
+}
+.box-challenging{
+    height: 150px ;
+}

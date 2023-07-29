@@ -1,0 +1,1 @@
+create database detail_transaksi;

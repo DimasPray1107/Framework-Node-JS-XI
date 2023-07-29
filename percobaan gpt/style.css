@@ -1,0 +1,78 @@
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Global Styles */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #branding {
+    float: left;
+  }/* Reset CSS */
+body, h1, h2, h3, p, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Global Styles */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #branding {
+    float: left;
+  }
+  
+  #branding h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  #branding h1 .highlight {
+    color: #e8491d;
+  }
+  
+  nav {
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style-type:
+  
+  
+  #branding h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  #branding h1 .highlight {
+    color: #e8491d;
+  }
+  
+  nav {
+    overflow: hidden;
+  }
+  
+  nav ul{
+    list-style-type: none;
+
+  }
+
+  

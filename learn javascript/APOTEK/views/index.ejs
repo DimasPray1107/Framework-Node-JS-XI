@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apotek Moklet</title>
+
+    <!-- set bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- navigation sention -->
+    <nav class="navbar navbar-expand-lg bg-primary text-black mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="$">Apotek</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/obat">Obat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pelanggan">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/apoteker">Apoteker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/transaksi/add">Form Transaksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Transaksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/auth/logout"
+                        onclick="return confirm('Apakah Anda yakin untuk keluar?')">
+                            <%= dataUser.nama_apoteker %> (Log Out)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navigation section -->
+
+    <!-- content section -->
+    <%- include(`./pages/${page}`) %> 
+    <!-- end content section-->
+    
+    <!-- footer section -->
+    <div class="container-fluid position-absolute bottom-0 bg-black">
+        <h6 class="text-white py-2 text-center">
+            Made By &#10084;&#65039; at 2022
+        </h6>
+
+    </div>
+    <!-- end footer section -->
+    </nav>
+</body>
+
+</html>

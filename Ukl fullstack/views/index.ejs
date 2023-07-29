@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PenjualanTelur</title>
+
+    <!-- set bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- navigation sention -->
+    <nav class="navbar navbar-expand-lg bg-warning text-black mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-warning fw-bold" href="$">EggShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/telur">Telur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pack">pack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/member">Member</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/transaksi/add">Form Transaksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/transaksi">Transaksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-sm btn-danger">
+                            <a href="/auth/logout" class="nav-link"  onclick="return confirm(`Apakah Anda yakin ingin keluar?`)">
+                                <b >Log out</b>
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navigation section -->
+
+    <!-- content section -->
+    <%- include(`./pages/${page}`) %>
+        <!-- end content section-->
+
+        <!-- footer section -->
+        <div class="container-fluid position-fixed bottom-0 bg-black ">
+            <h6 class="text-white py-1 text-center">
+                Made By Dimas at 2022
+            </h6>
+
+        </div>
+        <!-- end footer section -->
+        </nav>
+</body>
+
+</html>

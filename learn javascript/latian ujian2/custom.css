@@ -1,0 +1,185 @@
+.container {
+    width: 100%;
+}
+
+#navigasi {
+    /*header*/
+    background-color: white;
+}
+
+.logo {
+    /*logo 99 design*/
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.logo>img {
+    width: 100px;
+    margin-left: 70px;
+}
+
+.container2 {
+    width: 100%;
+}
+
+#navigasi2 {
+    /*header*/
+    background-color: white;
+}
+
+.logo2 {
+    /*logo 99 design*/
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.logo2>img {
+    width: 160px;
+    margin-left: 45px;
+    margin-top: -21px;
+}
+
+.menu {
+    display: flex;
+    margin-left: 450px;
+    position: relative;
+}
+
+.menu>a {
+    margin-top: 10px;
+    padding: 17px;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.menu>img {
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+    margin-top: 17px;
+    justify-content: center;
+}
+
+.menu>a:hover {
+    background-color: darkgray;
+}
+
+.box-img {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.box-img>img {
+    width: 100%;
+    height: 550px;
+    filter: brightness(50%);
+}
+
+.box-text {
+    position: absolute;
+    text-align: center;
+}
+
+.box-text>h2 {
+
+    color: white;
+    font-size: 50px;
+    font-family: Merriweather;
+    font-weight: bold;
+    
+
+}
+
+.box-text>p {
+    color: lightgrey;
+    font-size: 20px;
+    font-family: Roboto;
+
+}
+
+.cta {
+    display: inline-block;
+    padding: 13px;
+    color: white;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid white;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    transition: 1s ease;
+    font-size: 15px;
+    text-decoration: none;
+    position: relative;
+    margin-top: 20px;
+
+}
+
+.cta:hover {
+    color: white;
+    background-color: coral;
+}
+
+.sponsor {
+    margin-top: 2px;
+}
+
+.sponsor>.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2>h2 {
+    margin-left: 250px;
+    margin-top: 80px;
+    font-size: 30px;
+    position: absolute;
+    font-family: Roboto;
+    color: lightgray;
+}
+
+.box3-text {
+    /*judul tengah*/
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.box3-text>h2 {
+    margin-top: 330px;
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    font-family: Courgette;
+}
+
+.box3 {
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.box3>.icon>img {
+    width: 80px;
+    height: 80px;
+    margin-left: 120px;
+    margin-top: 280px;
+    text-align: center;
+
+    
+}
+.box3>.icon>h3{
+    font-size: 25px;
+   margin-left: 136px;
+   font-family: Roboto;
+}
+.box3>.icon>p{
+    font-size: 12px;
+margin-left: 70px;
+}

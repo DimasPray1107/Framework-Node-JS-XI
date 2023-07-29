@@ -1,0 +1,18 @@
+<div class="container">
+    <h4>Form Apoteker</h4>
+    <hr>
+
+    <form action="<%= targetRoute %> " method="post">
+        Nama
+        <input type="text" name="nama_apoteker" value="<%= nama_apoteker %> " class="form-control mb-2" required>
+
+        Username
+        <input type="text" name="username" value="<%= username %> " class="form-control mb-2" required>
+        Password
+        <input type="text" name="password" value="<%= deskripsi(password)%> " class="form-control mb-2" required>
+
+        <button type="submit" class="btn btn-success">
+            Simpan
+        </button>
+    </form>
+</div>

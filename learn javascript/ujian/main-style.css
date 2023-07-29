@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* add custom font */
+/* font Libre_Franklin */
+@font-face {
+    font-family: Libre-Franklin;
+    src: url("assets/font/Libre_Franklin/static/LibreFranklin-Regular.ttf");
+}
+/* font Roboto */
+@font-face {
+    font-family: Roboto;
+    src: url("assets/font/Roboto/RobotoCondensed-Regular.ttf");
+}
+
+/* font Merriweather */
+@font-face {
+    font-family: Merriweather;
+    src: url("assets/font/Merriweather/Merriweather-Regular.ttf");
+}
+
+/* font Courgette */
+@font-face {
+    font-family: Courgette;
+    src: url("assets/font/Courgette/Courgette-Regular.ttf");
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* setting untuk ukuran smartphone*/
+[class*="col-"] {
+    width: 100%;
+    /* 100% of device width*/
+}
+
+/* setting untuk ukuran tabelet */
+@media only screen and (min-width:600px) {
+    .col-md-1 {
+        width: 8.33%;
+    }
+
+    .col-md-2 {
+        width: 16.66%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.33%;
+    }
+
+    .col-md-11 {
+        width: 91.66%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+/* setting utk ukuran PC */
+@media only screen and (min-width:780px) {
+    .col-lg-1 {
+        width: 8.33%;
+    }
+
+    .col-lg-2 {
+        width: 16.66%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33.33%;
+    }
+
+    .col-lg-5 {
+        width: 41.66%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+    }
+
+    .col-lg-8 {
+        width: 66.66%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        width: 83.33%;
+    }
+
+    .col-lg-11 {
+        width: 91.66%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+}

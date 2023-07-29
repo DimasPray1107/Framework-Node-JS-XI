@@ -1,0 +1,20 @@
+.container{
+    width: 100%;
+    }
+    
+    .text>h1{
+        color: red;
+        font-size: 60px;
+        align-items: center;
+        justify-content: center;
+        font-family: Roboto;
+        margin-left: 500px;
+        border: 1px;
+        box-shadow: 2px solid gray;
+        margin-top: 250px;
+    }
+
+    .text>h1:hover{
+        color: fuchsia;
+        background-color: white;
+    }

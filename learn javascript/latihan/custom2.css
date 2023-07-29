@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+}
+
+.judulh1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: crimson;
+	animation: text_reveal_box 1s ease;
+	animation-delay: 0.5s;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu>a {
+    padding: 20px;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}

@@ -1,0 +1,24 @@
+<div class="container">
+    <h4>Form member</h4>
+    <hr>
+    <form action="<%= targetRoute %> " method="post">
+        Nama
+        <input type="text" name="nama_member"
+        value="<%= nama_member %>"
+        class="form-control mb-2" required>
+
+        Alamat
+        <input type="text" name="alamat"
+        value="<%= alamat %>"
+        class="form-control mb-2" required>
+        
+        Telepon
+        <input type="text" name="telepon"
+        value="<%= telepon %>"
+        class="form-control mb-2" required>
+
+        <button type="submit" class="btn btn-success">
+            Simpan
+        </button>
+    </form>
+</div>

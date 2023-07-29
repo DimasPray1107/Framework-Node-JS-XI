@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header bg-warning">
+            <h4>Form Admin</h4>
+        </div>
+        <div class="card-body">
+            <form action="<%= targetRoute %>" method="post">
+                Nama Admin
+                <input type="text" name="nama_admin" id="nama_admin" class="form-control" value="<%= nama_admin %>" required />
+
+                Username
+                <input type="text" name="username" id="username" class="form-control" value="<%= username %>" required />
+
+                Password
+                <input type="text" name="password" id="password" class="form-control" value="<%= deskripsi(password) %>" required />
+
+                <!-- using js DOM to set default value of "jenis" -->
+                <script>
+                    document.querySelector('select[name="nama_admin"]').value = "<%= nama_admin %>"
+                </script>
+
+                <button type="submit" class="btn btn-success mt-2">
+                    Simpan
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="container">
+    <h4 class="text-primary">Data Admin</h4>
+    <hr>
+    <ul class="list-group my-2">
+        <% data.forEach(element=> { %>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <small class="text-info">Admin</small> <br />
+                        <%= element.nama_admin %>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <small class="text-info">Username</small> <br />
+                        <%= element.username %>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <small class="text-info">Password</small> <br />
+                         <%= element.password %>
+
+                    </div>
+
+                    <div class="col-lg-3">
+                        <small class="text-info">Action</small> <br />
+
+                        <!-- button edit -->
+                        <a href="/admin/edit/<%= element.id %>">
+                            <button class="btn btn-sm btn-primary">
+                                Edit
+                            </button>
+                        </a>
+
+                        <!-- button delete -->
+                        <a href="/admin/delete/<%= element.id %>"
+                            onclick="return confirm(`Apakah Anda yakin ingin menghapus data ini?`)">
+                            <button class="btn btn-sm btn-danger">
+                                Hapus
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            </li>
+            <% }) %>
+    </ul>
+
+    <!-- button add new data -->
+    <a href="/admin/add">
+        <button class="btn btn-md btn-success">
+            Tambah Data
+        </button>
+    </a>
+
+</div>

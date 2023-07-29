@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header bg-warning">
+            <h4>Form Member</h4>
+        </div>
+        <div class="card-body">
+            <form action="<%= targetRoute %>" method="post">
+                Jenis Telur
+                <input type="text" name="nama_member" id="nama_member" class="form-control" value="<%= nama_member %>" required />
+
+                Stok
+                <input type="text" name="alamat" id="alamat" class="form-control" value="<%= alamat %>" required />
+
+                Harga
+                <input type="text" name="telepon" id="telepon" class="form-control" value="<%= telepon %>" required />
+
+                <!-- Jenis
+                <select name="jenis" class="form-control" required>
+                    <option value="">-- Pilih Jenis Telur --</option>
+                    <option value="cair">Belum Matang</option>
+                    <option value="tablet">Setengah Matang</option>
+                    <option value="kapsul">Matang</option>
+                </select> -->
+
+                <!-- using js DOM to set default value of "jenis" -->
+                <script>
+                    document.querySelector('select[name="nama"]').value = "<%= nama_member%>"
+                </script>
+
+                <button type="submit" class="btn btn-success mt-2">
+                    Simpan
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

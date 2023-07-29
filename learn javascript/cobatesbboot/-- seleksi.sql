@@ -1,0 +1,2 @@
+-- seleksi
+SELECT * FROM jurusan;

@@ -1,0 +1,314 @@
+.container {
+    width: 100%;
+}
+
+#navigasi {
+    /*header*/
+    background-color: whitesmoke;
+}
+
+.logo {
+    /*logo 99 design*/
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.logo>img {
+    width: 200px;
+}
+
+
+.box {
+
+    margin-top: 150px;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 35px;
+    margin-left: 170px;
+
+
+
+}
+
+.text {
+    margin-top: 20px;
+    margin-left: 250px;
+    font-size: 15px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu>a {
+    padding: 20px;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu>img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 30px;
+    margin-top: 10;
+    justify-content: center;
+}
+
+.menu>a:hover {
+    background-color: rgb(194, 194, 183);
+}
+
+#wood {
+    background: url("image/wood.jpg");
+    padding: 20px;
+}
+
+#wood>h3 {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+#wood>.row {
+    justify-content: center;
+}
+
+#wood>.row>.box {
+    margin: 15px;
+    background-color: whitesmoke;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 15px;
+}
+
+#wood>.row>.box>img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+#wood>.row>.box>.price {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: coral;
+    color: white;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: -50px;
+}
+
+#wood>.row>.box>h5 {
+    font-size: 20px;
+    position: relative;
+    font-family: Roboto;
+    top: -50px;
+}
+
+.best-dishes {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.desc-dishes {
+    text-align: left;
+    font-family: cursive;
+    font-size: 20px;
+    padding: 15px;
+}
+
+#comment {
+    padding: 15px;
+}
+
+#comment>h3 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#comment>.row {
+    justify-content: center;
+}
+
+.img-comment {
+    width: 110px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.text-comment {
+    font-family: cursive;
+    font-size: 20px;
+}
+
+#comment>.row>.box {
+    margin-top: 15px;
+}
+
+#deliver {
+    background-color: lightgrey;
+}
+
+#deliver>h3 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#deliver>.row {
+    justify-content: center;
+}
+
+.text-verify {
+    height: 28px;
+    border-radius: 10px;
+}
+
+.cta {
+    display: inline-block;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    font-size: 15px;
+    text-decoration: none;
+    position: relative;
+    bottom: 210px;
+    margin-right: 750px;
+}
+
+.cta:hover {
+    color: white;
+    background-color: rgb(20, 137, 220);
+}
+
+.text-contact {
+    font-family: Roboto;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+
+
+#header {
+    justify-content: center;
+}
+
+.image-header {
+    width: 140%;
+    height: 590px;
+    position: relative;
+    right: 290px;
+
+}
+
+#header>.box>p {
+    font-size: 14px;
+    margin-left: 6px;
+    font-weight: normal;
+}
+
+.kotakan {
+    margin-top: 2px;
+}
+
+.kotakan>.box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box3>img {
+    width: 100%;
+    height: 200px;
+    filter: brightness(50%);
+}
+
+.box3>h2 {
+    font-size: 20px;
+    position: absolute;
+    font-family: Roboto;
+    color: white;
+}
+
+.box3>a {
+    font-size: 10px;
+    position: absolute;
+    color: white;
+    font-family: Roboto;
+    text-transform: uppercase;
+    padding: 20px;
+    bottom: -320px;
+
+}
+
+.box3>.btn {
+    font-size: 11px;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: 0.9s ease;
+    text-decoration: none;
+    bottom: -420px;
+    font-weight: bold;
+}
+
+.box3>.btn:hover {
+    color: white;
+    background-color: rgb(20, 137, 220);
+}
+
+#headsets{
+    margin-top: 60px;
+    justify-content: center;
+    display: flex;
+}
+
+.headset>.box4 {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+
+}
+
+.box4>img {
+    width: 100%;
+    height: 250px;
+}

@@ -1,0 +1,46 @@
+<div class="container">
+    <h4>Data Customer</h4>
+    <hr>
+    <!-- mempilkan data customer -->
+    <ul class="list-group">
+    <!-- forEach -> scanning isi array -->
+    <% data.forEach(element => { %>
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-lg-3">
+                    <small class="text-success">
+                        Nama
+                    </small> <br>
+                    <%= element.nama_customer %> 
+                </div>
+
+                <div class="col-lg-3">
+                    <small class="text-success">
+                        Alamat
+                    </small> <br>
+                    <%= element.nama_alamat %> 
+                </div>
+
+                <div class="col-lg-3">
+                    <small class="text-success">
+                        Telepon
+                    </small> <br>
+                    <%= element.nama_telepon %> 
+                </div>
+                
+                <div class="col-lg-3">
+                    <small class="text-success">
+                        opsi
+                    </small> <br>
+                    <a href="/pelanggan/edit/<%= element.id %> ">
+                        <button class="btn btn-primary">
+                            Edit
+                        </button>
+                    </a> 
+                </div>
+            </div>
+        </li>
+        
+    <%})%>
+    </ul>
+</div>

@@ -1,0 +1,99 @@
+<div class="container">
+    <h3>List Transaksi</h3>
+    <hr>
+
+    <ul class="list_group">
+        <% transaksi.forEach(element => { %>
+         <li class="list-group-item">
+            <div class="row">
+
+                <!-- are tgl transaksi -->
+                <div class="col-lg-3">
+                    <small>Tgl.Transaksi</small>
+                    <h6><%= element.tgl_transaksi %> </h6>
+                </div>
+
+                <!-- area nama member -->
+                <div class="col-lg-3 text-danger">
+                    <small>Nama member</small>
+                    <h6><%= element.nama_member %> </h6>
+                </div>
+
+                <!-- area nama apoteker -->
+                <div class="col-lg-3 text-danger">
+                    <small>Nama admin</small>
+                    <h6><%= element.nama_admin %> </h6>
+                </div>
+            </div>
+            <hr>
+            <div class="col-lg-1">
+                <a href="/transaksi/<%= element.id %>">
+                <button class="btn btn-sm btn-danger">
+                    &times;
+                </button></a>
+            </div>
+
+            <h5 class="mt-2">Daftar Pembeli</h5>
+            <ul class="lisst-group bg-warning">
+                <% element.detail.forEach(item => { %>
+                 <li class="list-group-item">
+                    <div class="row">
+                        <!-- area utk nama_telur -->
+                        <div class="col-lg-4">
+                            <small class="fw-bold">Nama telur</small>
+                            <h6 class="fst-italic"><%= item.jenis_telur %></h6>
+                        </div>
+                        <!-- area utk harga -->
+                        <div class="col-lg-3">
+                            <small class="text-black">Harga</small>
+                            <h6 class="fst-italic"><%= item.harga_telur %></h6>
+                        </div>
+                        <!-- area utk jumlah_beli -->
+                        <div class="col-lg-2">  
+                            <small class="text-black">jumlah</small>
+                            <h6 class="fst-italic"><%= item.jumlah_telur %></h6>
+                        </div>
+                        <!-- area utk Total -->
+                        <div class="col-lg-3">
+                            <small class="text-black">Total</small>
+                            <h6 class="fst-italic">
+                                <%= Number(item.jumlah_telur * item.harga_telur) %></h6>
+                        </div>
+                    </div>
+                 </li>
+                <% }) %>
+            </ul>
+
+            <ul class="lisst-group bg-info">
+                <% element.detail.forEach(item => { %>
+                 <li class="list-group-item">
+                    <div class="row">
+                        <!-- area utk nama_telur -->
+                        <div class="col-lg-4">
+                            <small class="fw-bold">Nama pack</small>
+                            <h6 class="fst-italic"><%= item.nama_pack %></h6>
+                        </div>
+                        <!-- area utk harga -->
+                        <div class="col-lg-3">
+                            <small class="text-black">Harga</small>
+                            <h6 class="fst-italic"><%= item.harga_pack %></h6>
+                        </div>
+                        <!-- area utk jumlah_beli -->
+                        <div class="col-lg-2">
+                            <small class="text-black">jumlah</small>
+                            <h6 class="fst-italic"><%= item.jumlah_pack %></h6>
+                        </div>
+                        <!-- area utk Total -->
+                        <div class="col-lg-3">
+                            <small class="text-black">Total</small>
+                            <h6 class="fst-italic">
+                                <%= Number(item.jumlah_pack * item.harga_pack) %></h6>
+                        </div>
+                    </div>
+                 </li>
+                <% }) %>
+            </ul>
+         </li>
+        <% }) %> 
+    </ul>
+</div>

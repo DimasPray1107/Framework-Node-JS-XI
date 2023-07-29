@@ -1,0 +1,14 @@
+#footer {
+    height: 20vh;
+    background-color: coral;
+    color: #fff;
+}
+.box-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-kelas{
+    width: 150px;
+    
+}

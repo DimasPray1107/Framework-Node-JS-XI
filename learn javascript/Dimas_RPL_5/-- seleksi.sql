@@ -1,0 +1,2 @@
+-- seleksi
+select * from siswa
